@@ -39,6 +39,7 @@ an event is  sent via code to notify when certain actions take place
 
 4. Why would we convert a NodeList into an Array?
   it makes easier to access and manipulate the data
+  
 5. What is a component?
  a combination of technologies brought together that allows reusable custom elements in a website or application.
 

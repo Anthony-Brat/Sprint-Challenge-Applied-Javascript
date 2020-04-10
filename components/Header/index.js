@@ -11,4 +11,14 @@
 // Use your function to create a header
 // and append it to the DOM inside the div.header-container
 
-function Header() {}
+function Header() {
+
+const headerComponent = document.createElement('div');
+const hdrDate = document.createElement('span');
+const title = document.createElement('h1');
+const hdrTemp =document.createElement('span');
+
+
+
+
+}
