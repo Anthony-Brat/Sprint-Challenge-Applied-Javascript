@@ -13,16 +13,16 @@
 
 function Header() {
 // create elements
-const hdrDiv = document.createElement('div');
-const hdrDate = document.createElement('span');
-const title = document.createElement('h1');
-const hdrTemp = document.createElement('span');
+const hdrDiv = document.createElement('div')
+const hdrDate = document.createElement('span')
+const title = document.createElement('h1')
+const hdrTemp = document.createElement('span')
 
 
 // nest
-hdrDiv.append(hdrDate);
-hdrDiv.append(title);
-hdrDiv.append(hdrTemp);
+hdrDiv.append(hdrDate)
+hdrDiv.append(title)
+hdrDiv.append(hdrTemp)
 
 
 // create classes
