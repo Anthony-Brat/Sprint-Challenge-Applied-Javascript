@@ -32,12 +32,16 @@ Edit this document to include your answers after each question. Make sure to lea
 The DOM is and object based representation of the source HTML. Through the DOM you are able to add, delete, or change content on the HTML document without changing anything on the actual HTML document.git 
 
 2. What is an event?
+Code that is sent to notify when certain actions take place
 
 3. What is an event listener?
+An event listener is a a method used to detect when specific events occur
 
 4. Why would we convert a NodeList into an Array?
+To make it easier to access and manipulate the data 
 
 5. What is a component?
+A reusable block of code.
 
 ### Git Set up
 
@@ -50,7 +54,7 @@ The DOM is and object based representation of the source HTML. Through the DOM y
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [X] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
 * [ ] Following the instructions in the `Header/index.js` file, create the Header component.
 
