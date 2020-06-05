@@ -40,22 +40,26 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         let card = document.createElement('div')
         let headline = document.createElement('div')
         let authorInfo = document.createElement('div')
+        let imageContainer = document.createElement('div')
         let image = document.createElement('img')
-        let imageUrl = document.createElement('div')
         let authorName = document.createElement('span')
 
-        card.appendChild(headline, authorInfo)
-        authorInfo.appendChild(image, authorName)
-        image.appendChild(imageUrl)
+        card.appendChild(authorInfo)
+        card.appendChild(headline)
+        authorInfo.appendChild(imageContainer)
+        authorInfo.appendChild(authorName)
+        imageContainer.appendChild(image)
+
+
 
         card.classList.add('card')
         headline.classList.add('headline')
         authorInfo.classList.add('author')
-        image.classList.add('img-container')
-        imageUrl.classList.add('img-container')
+        imageContainer.classList.add('img-container')
+        
 
         headline.innerHTML = object.headline
-        imageUrl.src =  object.authorPhoto
+        image.src =  object.authorPhoto
         authorName.innerHTML = 'By' + object.authorName
 
 
