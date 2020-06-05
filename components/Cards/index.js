@@ -44,11 +44,9 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         let image = document.createElement('img')
         let authorName = document.createElement('span')
 
-        card.appendChild(authorInfo)
-        card.appendChild(headline)
-        authorInfo.appendChild(imageContainer)
-        authorInfo.appendChild(authorName)
-        imageContainer.appendChild(image)
+        card.append(authorInfo, headline)
+        authorInfo.append(authorName, imageContainer)
+        imageContainer.append(image)
 
 
 
@@ -58,9 +56,9 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         imageContainer.classList.add('img-container')
         
 
-        headline.innerHTML = object.headline
+        headline.textContent = object.headline
         image.src =  object.authorPhoto
-        authorName.innerHTML = 'By' + object.authorName
+        authorName.textContent = 'By' + object.authorName
 
 
         return card

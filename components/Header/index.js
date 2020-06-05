@@ -19,14 +19,13 @@ function Header() {
     let temp = document.createElement('span')
     let headerContainer = document.querySelector('.header-container')
 
-    headerContainer.appendChild(header)
-    header.appendChild(date)
-    header.appendChild(title)
-    header.appendChild(temp)
+    headerContainer.append(header)
+    header.append(date, title, temp)
+    
 
     header.classList.add('header')
-    header.classList.add('date')
-    header.classList.add('temp')
+    date.classList.add('date')
+    temp.classList.add('temp')
 
     date.textContent = 'March 28, 2019'
     title.textContent = 'Lambda Times'
